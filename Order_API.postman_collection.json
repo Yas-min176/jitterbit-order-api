@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "927a8e39-bf80-464e-8dd7-51105df43f23",
+		"name": "Jitterbit Order API",
+		"description": "API REST para gerenciamento de pedidos com mapeamento de dados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50492483",
+		"_collection_link": "https://yas-min176-a2a35673-4217607.postman.co/workspace/Yasmin-Sena's-Workspace~9a678fdc-2f6f-4068-8f48-6302277d5c60/collection/50492483-927a8e39-bf80-464e-8dd7-51105df43f23?action=share&source=collection_link&creator=50492483"
+	},
+	"item": [
+		{
+			"name": "POST - Criar Pedido 1 (Notebook + Mouse)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numeroPedido\": \"VEND-2025-0001-01\",\r\n  \"valorTotal\": 4599.90,\r\n  \"dataCriacao\": \"2025-12-02T10:30:00.000Z\",\r\n  \"items\": [\r\n    {\r\n      \"idItem\": \"101\",\r\n      \"quantidadeItem\": 1,\r\n      \"valorItem\": 3999.90\r\n    },\r\n    {\r\n      \"idItem\": \"202\",\r\n      \"quantidadeItem\": 1,\r\n      \"valorItem\": 600.00\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Buscar Pedido 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/order/VEND-2025-0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"VEND-2025-0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Criar Pedido 2 (Fones)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numeroPedido\": \"VEND-2025-0002-01\",\r\n  \"valorTotal\": 150.50,\r\n  \"dataCriacao\": \"2025-12-02T14:15:00.000Z\",\r\n  \"items\": [\r\n    {\r\n      \"idItem\": \"303\",\r\n      \"quantidadeItem\": 2,\r\n      \"valorItem\": 75.25\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Buscar Pedido 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/order/VEND-2025-0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"VEND-2025-0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Criar Pedido 3 (Teclado + Mouse Pad)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numeroPedido\": \"VEND-2025-0003-01\",\r\n  \"valorTotal\": 820.00,\r\n  \"dataCriacao\": \"2025-12-01T09:00:00.000Z\",\r\n  \"items\": [\r\n    {\r\n      \"idItem\": \"404\",\r\n      \"quantidadeItem\": 3,\r\n      \"valorItem\": 120.00\r\n    },\r\n    {\r\n      \"idItem\": \"505\",\r\n      \"quantidadeItem\": 1,\r\n      \"valorItem\": 460.00\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Buscar Pedido 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/order/VEND-2025-0003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"VEND-2025-0003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Listar Todos os Pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/order/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - Atualizar Pedido 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorTotal\": 5000.00,\r\n  \"dataCriacao\": \"2025-12-02T16:00:00.000Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order/VEND-2025-0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"VEND-2025-0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Deletar Pedido 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/order/VEND-2025-0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"VEND-2025-0002"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
