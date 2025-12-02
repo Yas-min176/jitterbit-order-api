@@ -342,9 +342,4 @@ A collection com todos os endpoints e exemplos de requisições está no arquivo
 
 Importe no Postman para testar a API.
 
----
-
-## Autor
-
-**Yasmin Sena**
 
